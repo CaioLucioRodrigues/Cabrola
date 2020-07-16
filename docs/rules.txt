@@ -1,0 +1,50 @@
+1 - Player Status List
+1.1 - Max Health Points
+1.2 - Health Points
+1.3 - Armor
+1.4 - Initiative
+1.5 - Mana Points
+1.6 - Action Points Per Round
+1.7 - Gold
+1.8 - Level
+
+2 - Player Ability List
+2.1 - Strength ( +x physical damage per level )
+2.2 - Dexterity ( +x initiative per level / +x chance to hit per level )
+2.3 - Constitution ( +x max health per level )
+2.4 - Intelligence ( +x magic damage per level )
+
+3 - Player Options
+3.1 - Class Features []
+3.2 - Weapons []
+3.3 - Magics []
+3.4 - Itens []
+3.5 - Equip []
+
+4 - Class Features Description
+4.1 - Action Points
+4.2 - Modifiers []
+
+5 - Weapon Description
+5.1 - Damage
+5.2 - Action Points
+5.3 - Modifiers []
+
+6 - Magic Description
+6.1 - Mana Points
+6.2 - Modifiers []
+
+7 - Itens Description
+7.1 - Price
+7.2 - Action Points
+7.3 - Modifiers []
+
+8 - Equip []
+8.1 - Price
+8.2 - Modifiers []
+
+9 - Modifiers { Damage, Increases Status [], Increases Ability []}
+
+10 - Increases Status { Permanent, Increases Points in Limit, Increases Points per Rounds }
+
+11 - Increases Ability { Permanent, Increases Points per Rounds }

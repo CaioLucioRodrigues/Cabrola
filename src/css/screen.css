@@ -1,0 +1,49 @@
+#screen {    
+    display: grid;    
+    width: 95%;
+    height: 95%;  
+    grid-gap: 10px;
+    grid-template-columns: 24% 24% 24% 14% 14%;
+    grid-template-rows: 5% 20% 20% 20% 25% 10%;    
+    background-color: rgb(63, 56, 56);
+    color: #444;
+}
+
+.area {
+    background-color: rgb(68, 62, 62);
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px;    
+}
+
+#header {
+    grid-column: 1 / 6;
+    grid-row: 1;
+}
+
+#map {
+    grid-column: 1 / 4;
+    grid-row: 2 / 6;
+}
+
+#interaction {
+    grid-column: 4 / 6;
+    grid-row: 2 / 4;
+}
+
+#inventory {
+    grid-column:  4 / 5;
+    grid-row: 4 / 6;
+}
+
+#status {
+    grid-column: 5 / 6;
+    grid-row: 4 / 6;
+}
+
+#messages {
+    display: inline;
+    text-align: left;
+    grid-column: 1 / 6;
+    grid-row: 6;
+}
