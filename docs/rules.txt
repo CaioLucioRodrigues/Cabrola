@@ -47,4 +47,4 @@
 
 10 - Increases Status { Permanent, Increases Points in Limit, Increases Points per Rounds }
 
-11 - Increases Ability { Permanent, Increases Points per Rounds }
+12 - Increases Ability { Permanent, Increases Points per Rounds }
