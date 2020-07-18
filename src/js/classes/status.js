@@ -4,10 +4,15 @@ class Status {
         this.maxHealthPoints = maxHealthPoints;
         this.healthPoints = healthPoints;
         this.armor = armor;
-        this.initiative = initiative;
+        this.initiative = initiative;        
         this.manaPoints = manaPoints;
-        this.actionPointsPerRound = actionPointsPerRound;
+        this.actionPointsPerRound = actionPointsPerRound; 
+        this.actionPointsCurrentRound = 0;
         this.gold = gold;
         this.level = level;
+    }
+
+    newRound(){
+        this.actionPointsCurrentRound = this.actionPointsPerRound;
     }
 }
