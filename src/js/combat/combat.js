@@ -1,11 +1,11 @@
 class Combat{
     
     constructor(players){
-        this.rounds = 0;
-        this.initiative = new Initiative(players);
+        this._rounds = 0;
+        this._initiative = new Initiative(players);
     }
 
     newRound(){
-        this.rounds++;
+        this._rounds = this._rounds++;
     }
 }
