@@ -1,16 +1,16 @@
 class Initiative {
     
     constructor (players) {
-        this.players = players;
-        sortInitiative();
+        this.players = players;        
+        this.sortInitiative();
     }
 
     sortInitiative() {
-        players.sort(function(a, b){
-            if (a.initiative > b.initiative) {
+        this.players.sort(function(a, b){
+            if (a.status.initiative > b.status.initiative) {
                 return 1;
               }
-              if (a.initiative < b.initiative) {
+              if (a.status.initiative < b.status.initiative) {
                 return -1;
               }
               return 0;
