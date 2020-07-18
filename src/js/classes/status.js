@@ -1,6 +1,6 @@
 class Status {
 
-    constructor(maxHealthPoints, healthPoints, armor, initiative, manaPoints, actionPointsPerRound, gold, level) {
+    constructor(maxHealthPoints, healthPoints, armor, initiative, manaPoints, actionPointsPerRound, gold, level, experience) {
         this.maxHealthPoints = maxHealthPoints;
         this.healthPoints = healthPoints;
         this.armor = armor;
@@ -9,5 +9,6 @@ class Status {
         this.actionPointsPerRound = actionPointsPerRound;
         this.gold = gold;
         this.level = level;
+        this.experience = experience;
     }
 }
