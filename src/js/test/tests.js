@@ -6,7 +6,7 @@ class Tests {
         Tests.testLevelUp();
     }
 
-    static testNewPlayers() {
+    static testNewPlayers() {        
         console.log('---testNewPlayers---');
         let player1 = new Fighter('Caio', 1);
         let player2 = new Wizard('Marcola', 5);
@@ -16,7 +16,7 @@ class Tests {
         console.log(player3);
     }
 
-    static testNewCombat() {
+    static testNewCombat() {        
         console.log('---testNewCombat---');
         let player1 = new Fighter('Caio', 1);
         let player2 = new Wizard('Marcola', 5);
@@ -27,7 +27,7 @@ class Tests {
         console.log(combat.initiative);
     }
 
-    static testLevelUp() {
+    static testLevelUp() {        
         console.log('---testLevelUp---');
         let player1 = new Wizard('Caio', 1);
         console.log(player1);

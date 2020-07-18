@@ -5,6 +5,7 @@ class Player {
         this._ability = ability;
         this._class = kind;
         this._name = name;
+        gameLog.appendText('Player ' + this._name + ' (' + this._class + ') created');
     }
 
     get status() {

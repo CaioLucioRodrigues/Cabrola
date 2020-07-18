@@ -1,10 +1,12 @@
  class Dicer {
 
-    static roll(dices) {        
+    static roll(dices) {                
         return 1 + Math.floor((dices.MAX) * Math.random());
     }
 
     static damageRoll(damage) {        
-        return Dicer.roll(damage.dice) + damage.modifier;
+        const result = Dicer.roll(damage.dice) + damage.modifier;
+        gameLog.appendText('Damage roll: ' + result)
+        return result;
     }
  }

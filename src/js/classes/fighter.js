@@ -22,11 +22,12 @@ class Fighter extends Player {
 
         let status = new Status(FighterStatus.getMaxHealthPoints()[level - 1], 10, 10, FighterStatus.getActionsPerRound()[level - 1], 10 * level, level);
         let ability = new Ability(14, 12, 15, 8);
-        super(status, ability, classes.FIGHTER, name);
+        super(status, ability, classes.FIGHTER, name);        
     }    
 
     newLevel() {
         const level = this._status.level + 1;
+        gameLog.appendText('Player level went up to ' + level);
         if (level <= FighterStatus.getMaxLevel())
         {        
             this.status.newLevel(FighterStatus.getMaxHealthPoints()[level - 1], FighterStatus.getActionsPerRound()[level - 1]);

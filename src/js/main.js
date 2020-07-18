@@ -1,3 +1,6 @@
+var gameLog = new Logger();
+
 $(document).ready(function(){
-    Tests.testLevelUp();
+
+    Tests.testGeneral();
 });
