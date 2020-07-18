@@ -30,16 +30,16 @@ class Ability {
 
     increaseDexterity(dexterityPoints) {
         this._dexterity = this._dexterity + dexterityPoints;
-        gameLog.appendText('Dexterity increased to ' + this._strength)
+        gameLog.appendText('Dexterity increased to ' + this._dexterity)
     }    
 
     increaseConstitution(constitutionPoints) {
         this._constitution = this._constitution + constitutionPoints;
-        gameLog.appendText('Constitution increased to ' + this._strength)
+        gameLog.appendText('Constitution increased to ' + this._constitution)
     }  
     
     increaseIntelligence(intelligencePoints) {
         this._intelligence = this._intelligence + intelligencePoints;
-        gameLog.appendText('Intelligence increased to ' + this._strength)
+        gameLog.appendText('Intelligence increased to ' + this._intelligence)
     }    
 }

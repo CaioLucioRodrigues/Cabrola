@@ -41,9 +41,9 @@ class Status {
         
         if (actionPointsPerRound > this._actionPointsPerRound) {
             this._actionPointsPerRound = actionPointsPerRound;
-            gameLog.appendText('Updated action points to ' + this._healthPoints);
+            gameLog.appendText('Updated action points to ' + this._actionPointsPerRound);
         }
-        
+
         this._healthPoints = this._maxHealthPoints;     
         gameLog.appendText('Health points restored');
     }
