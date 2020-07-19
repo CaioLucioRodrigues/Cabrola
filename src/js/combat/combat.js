@@ -6,7 +6,7 @@ class Combat{
     }
 
     newRound(){
-        this._rounds = this._rounds + 1;
+        this._rounds += 1;
         gameLog.appendText('Round: ' + this._rounds)
     }
 }

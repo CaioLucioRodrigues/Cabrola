@@ -5,5 +5,4 @@ class Messenger {
         text.html(text.html().replace(/\n/g,'<br/>'));   
         gameLog.appendText(message);
     }
-
 }

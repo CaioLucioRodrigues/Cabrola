@@ -24,22 +24,22 @@ class Ability {
     }        
     
     increaseStrength(strengthPoints) {        
-        this._strength = this._strength + strengthPoints;
+        this._strength += strengthPoints;
         gameLog.appendText('Strength increased to ' + this._strength)
     }
 
     increaseDexterity(dexterityPoints) {
-        this._dexterity = this._dexterity + dexterityPoints;
+        this._dexterity += dexterityPoints;
         gameLog.appendText('Dexterity increased to ' + this._dexterity)
     }    
 
     increaseConstitution(constitutionPoints) {
-        this._constitution = this._constitution + constitutionPoints;
+        this._constitution += constitutionPoints;
         gameLog.appendText('Constitution increased to ' + this._constitution)
     }  
     
     increaseIntelligence(intelligencePoints) {
-        this._intelligence = this._intelligence + intelligencePoints;
+        this._intelligence += intelligencePoints;
         gameLog.appendText('Intelligence increased to ' + this._intelligence)
     }    
 }

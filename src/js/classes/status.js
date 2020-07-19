@@ -1,16 +1,15 @@
 class Status {
 
-    constructor(maxHealthPoints, healthPoints, armor, initiative, manaPoints, actionPointsPerRound, gold, level, experience) {
-        this.maxHealthPoints = maxHealthPoints;
-        this.healthPoints = healthPoints;
-        this.armor = armor;
-        this.initiative = initiative;
-        this.manaPoints = manaPoints;
-        this.actionPointsPerRound = actionPointsPerRound;
-        this.gold = gold;
+    constructor(maxHealthPoints, armor, initiative, actionPointsPerRound, gold, level, experience) {
+        this._maxHealthPoints = maxHealthPoints;
+        this._healthPoints = maxHealthPoints;
+        this._armor = armor;
+        this._initiative = initiative;        
+        this._actionPointsPerRound = actionPointsPerRound;        
         this._level = level;
-        this._actionPointsCurrentRound = 0;        
-        this.experience = experience;
+        this._experience = experience;
+        this._actionPointsCurrentRound = 0;                
+        this._gold = gold;
     }
 
     get level() {
@@ -21,10 +20,14 @@ class Status {
         return this._healthPoints;
     }
 
+    get initiative() {
+        return this._initiative;
+    }
+
     set heathPoints(healthPoints) {
         ((this._healthPoints + healthPoints) >= this._maxHealthPoints) ? 
             this._healthPoints = this._maxHealthPoints : 
-            this._healthPoints = this._healthPoints + healthPoints;
+            this._healthPoints += healthPoints;
         gameLog.appendText('Health points restored to ' + this._healthPoints + ' points');
     }
 
@@ -34,7 +37,7 @@ class Status {
     }
 
     newLevel(maxHealthPoints, actionPointsPerRound) {
-        this._level = this._level + 1;
+        this._level += 1;
 
         if (maxHealthPoints > this._maxHealthPoints) {
             this._maxHealthPoints = maxHealthPoints;
