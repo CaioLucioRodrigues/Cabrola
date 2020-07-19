@@ -1,15 +1,16 @@
+=========Player=========
+
 1 - Player Status List
 1.1 - Max Health Points
 1.2 - Health Points
 1.3 - Armor
-1.4 - Initiative  // We could put initiative on max Dexterity
-1.5 - Mana Points
-1.6 - Max Mana Points
-1.7 - Action Points Per Round
-1.8 - Gold
-1.9 - Level
-1.10 - Experience (Points) 
-1.11 - Inventory
+1.4 - Mana Points
+1.5 - Action Points Per Round
+1.6 - Action Points Current Round
+1.7 - Gold
+1.8 - Level
+1.9 - Experience (Points) 
+1.10 - Inventory
 
 2 - Player Ability List
 2.1 - Strength ( +x physical damage per level )
@@ -33,6 +34,7 @@
 5.2 - Action Points
 5.3 - Modifiers []
 5.4 - Tier
+5.5 - Level
 
 6 - Magic Description
 6.1 - Mana Points
@@ -50,10 +52,42 @@
 8.2 - Modifiers []
 8.3 - Tier 
 
-9 - Modifiers { Damage, Increases Status [], Increases Ability []}
+9 - Modifiers { Damage[], Increases Status [], Increases Ability []}
 
 10 - Increases Status { Permanent, Increases Points in Limit, Increases Points per Rounds }
 
-12 - Increases Ability { Permanent, Increases Points per Rounds }
+11 - Increases Ability { Permanent, Increases Points per Rounds }
 
-13 - Tier {Level , Color, DropProbably}
+12 - Tier { Rarity [Legendary/ Epic/ Rare/ Uncommon / Common ], Color [Orange / Purple / Blue / Green / White ], DropProbably}
+
+13 - Damage
+13.1 - Dice
+13.2 - Modifier
+
+=========Combat=========
+
+1 - Fight
+1.1 - Rounds []
+1.2 - Current Round
+1.3 - Initiative Sequence
+1.4 - Log
+
+2 - Round
+1.1 - Initiative Sequence
+1.2 - Current Player
+1.3 - Log
+
+3 - Action
+3.1 - Count
+3.2 - Modifier
+
+=========Enemy=========
+1.1 - Max Health Points
+1.2 - Health Points
+1.3 - Armor
+1.4 - Initiative
+1.5 - Mana Points
+1.6 - Action Points Per Round
+1.7 - Gold
+1.8 - Level
+

@@ -1,5 +1,6 @@
-$(document).ready(function(){    
-    
-    //console.log(GlobalsElements.getMessagesArea());
-    
+var gameLog = new Logger();
+
+$(document).ready(function(){
+
+    Tests.testGeneral();
 });
