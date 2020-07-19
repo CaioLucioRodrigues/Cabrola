@@ -46,7 +46,7 @@ class Tests {
 
     static testSwords (){
         console.log('---testeSwords---')
-        let sword1 = new LightSword('Kobold Sword', [+2], Tier.Uncommon)
+        let sword1 = new LightSword('Kobold Sword', +2, Tier.Uncommon, [])
         console.log(sword1)
     }
 }
