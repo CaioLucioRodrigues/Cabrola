@@ -36,7 +36,9 @@
 5.2 - Action Points
 5.3 - Modifiers []
 5.4 - Tier
-5.5 - Level
+5.5 - TypeWeapon
+5.6 - Name
+5.7 - Range
 
 6 - Magic Description
 6.1 - Mana Points
@@ -63,8 +65,12 @@
 12 - Tier { Rarity [Legendary/ Epic/ Rare/ Uncommon / Common ], Color [Orange / Purple / Blue / Green / White ], DropProbably}
 
 13 - Damage
-13.1 - Dice
-13.2 - Modifier
+13.1 - QtdDice
+13.2 - Dice 
+13.3 - Modifier
+
+14 TypeWeapon
+14.1 [Sword / Bow / Knife / Staff]
 
 =========Combat=========
 
@@ -92,4 +98,9 @@
 1.6 - Action Points Per Round
 1.7 - Gold
 1.8 - Level
+
+
+
+
+
 
