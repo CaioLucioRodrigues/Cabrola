@@ -20,7 +20,7 @@ class Wizard extends Player {
         if (level > WizardStatus.getMaxLevel()) 
             level = WizardStatus.getMaxLevel();
 
-        let status = new Status(WizardStatus.getMaxHealthPoints()[level - 1], 8, 11, WizardStatus.getActionsPerRound()[level - 1], 30 * level, level);                
+        let status = new Status(WizardStatus.getMaxHealthPoints()[level - 1], 8, 11, WizardStatus.getActionsPerRound()[level - 1], 30 * level, level, 0);                
         let ability = new Ability(8, 10, 10, 16);
         super(status, ability, classes.WIZARD, name);
     }
