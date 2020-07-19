@@ -5,8 +5,9 @@
     }
 
     static damageRoll(damage) {        
-        const result = Dicer.roll(damage.dice) + damage.modifier;
-        gameLog.appendText('Damage roll: ' + result)
+        const roll = Dicer.roll(damage.dice);
+        const result = roll + damage.modifier;
+        gameLog.appendText('Damage roll: ' + result + ' - roll: ' + roll + ' modifier: ' + (damage.modifier == 0 ? '' : (damage.modifier > 0 ? '+' : '-') + damage.modifier));
         return result;
     }
  }
