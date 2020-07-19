@@ -4,6 +4,7 @@ class Tests {
         Tests.testNewPlayers();
         Tests.testNewCombat();
         Tests.testLevelUp();
+        Tests.testWeapons();
     }
 
     static testNewPlayers() {        
@@ -39,5 +40,14 @@ class Tests {
         console.log(player1);
     }
 
+    static testWeapons(){
+        Tests.testSwords();
+    }
+
+    static testSwords (){
+        console.log('---testeSwords---')
+        let sword1 = new LightSword('Kobold Sword', [+2], Tier.Uncommon)
+        console.log(sword1)
+    }
 }
 

@@ -1,24 +1,26 @@
 class Sword extends Weapons {    
    
-    constructor(name, damage, actionsPoints , tier, type ) {
-        super(name, damage, actionsPoints, tier,type )
+    constructor(name, damage, actionsPoints , tier, type, modifiers ) {
+        super(name, damage, actionsPoints, tier,type, modifiers )
     }  
 }
 
-class LigthSword extends Sword {    
+class LightSword extends Sword {    
        
-    constructor(name, modifiers, tier ) {
-        this._actionsPoints = 3;    
-        this._damage = new Damage(1, dices.D10, modifiers )  
-        super( name, damage, actionsPoints, modifiers, tier, typeWeapons.LightSword)
+    constructor(name, damagemodifiers, tier, modifiers ) {
+        let actionsPoints = 3;    
+
+        let damage = new Damage(1, dices.D10, damagemodifiers )  
+
+        super( name, damage, actionsPoints, tier, typeWeapons.LightSword, modifiers)
     }  
 }
 
 class HeavySword extends Sword {    
 
-    constructor(name, damage, actionsPoints , tier ) {
-        this._actionsPoints = 6;    
-        this._damage = new Damage(2, dices.D6, modifiers )  
-        super(name, damage, actionsPoints, tier, typeWeapons.HeavySword  )
+    constructor(name, damagemodifiers, tier, modifiers ) {
+        let actionsPoints = 6;    
+        let damage = new Damage(2, dices.D6, modidamagemodifiersfiers )  
+        super(name, damage, actionsPoints, tier, typeWeapons.HeavySword, modifiers  )
     }  
 }
