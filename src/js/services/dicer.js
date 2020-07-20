@@ -5,9 +5,14 @@
     }
 
     static damageRoll(damage) {        
-        const roll = Dicer.roll(damage.dice);
-        const result = roll + damage.modifier;
-        Logger.appendText('Damage roll: ' + result + ' - roll: ' + roll + ' modifier: ' + (damage.modifier == 0 ? '' : (damage.modifier > 0 ? '+' : '-') + damage.modifier));
+        let result= 0;    
+        for (let i = 0; i < damage.quantitiesDices; i++) {
+            const roll = Dicer.roll(damage.dice);
+            result = result + roll;
+            gameLog.appendText('Dice:'+ i +' - Damage roll: ' + roll);
+        }
+        result += damage.modifier;
+        gameLog.appendText('Damage Total: ' + result + ' modifier: ' + (damage.modifier == 0 ? '' : (damage.modifier > 0 ? '+' : '-') + damage.modifier));
         return result;
     }
  }

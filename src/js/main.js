@@ -1,4 +1,4 @@
-var Player = required('./classes/player.js')
+//var Player = required('./classes/player.js')
 
 $(document).ready(function(){    
 

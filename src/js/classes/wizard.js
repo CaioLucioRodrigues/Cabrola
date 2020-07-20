@@ -1,4 +1,4 @@
-let Player = required('./player.js')
+let Player = required('.git /player.js')
 
 class WizardStatus {
 

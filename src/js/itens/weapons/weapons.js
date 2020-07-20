@@ -8,6 +8,10 @@ class Weapons {
         this._name = name;
         this._modifiers = modifiers;
     }
+
+    get damage(){
+        return this._damage;
+    }
 }
 
 const subtypeWeapons = {

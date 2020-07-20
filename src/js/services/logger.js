@@ -18,6 +18,10 @@ class Logger {
         this._log += '\n' + message;        
     }
 
+    clear() {
+        this._log = '';        
+    }        
+
     static appendText(message) {
         let log = new Logger();
         log.appendText(message);
