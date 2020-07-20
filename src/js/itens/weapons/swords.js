@@ -8,11 +8,9 @@ class Sword extends Weapons {
 class LightSword extends Sword {    
        
     constructor(name, damageModifiers, tier, modifiers ) {
-        let actionsPoints = 3;    
-
+        let actionsPoints = 3;
         let damage = new Damage(1, dices.D10, damageModifiers )  
-
-        super( name, damage, actionsPoints, tier, typeWeapons.LightSword, modifiers)
+        super(name, damage, actionsPoints, tier, typeWeapons.LightSword, modifiers)
     }  
 }
 

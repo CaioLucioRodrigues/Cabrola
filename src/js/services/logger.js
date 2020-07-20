@@ -17,6 +17,11 @@ class Logger {
     appendText(message) {
         this._log += '\n' + message;        
     }
+
+    static appendText(message) {
+        let log = new Logger();
+        log.appendText(message);
+    }
 }
 
-const gameLog = new Logger();
+module.exports = Logger;

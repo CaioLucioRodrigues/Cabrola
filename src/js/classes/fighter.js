@@ -1,3 +1,8 @@
+let Player = require('./player.js')
+let Ability = require('./ability.js')
+let Status = require('./status.js')
+let classes = require('./player.js')
+
 class FighterStatus {
 
     static getMaxHealthPoints() {
@@ -12,7 +17,7 @@ class FighterStatus {
 }
 
 class Fighter extends Player {
-
+    
     constructor(name, level) {
 
         if (level > FighterStatus.getMaxLevel()) 
@@ -25,7 +30,7 @@ class Fighter extends Player {
 
     newLevel() {
         const level = this._status.level + 1;
-        gameLog.appendText('Player level went up to ' + level);
+        Logger.appendText('Player level went up to ' + level);
         if (level <= FighterStatus.getMaxLevel())
         {        
             this.status.newLevel(FighterStatus.getMaxHealthPoints()[level - 1], FighterStatus.getActionsPerRound()[level - 1]);
@@ -34,3 +39,5 @@ class Fighter extends Player {
         }
     }    
 }
+
+module.exports = Fighter;

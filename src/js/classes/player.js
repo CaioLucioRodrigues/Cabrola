@@ -1,12 +1,19 @@
-class Player {
+let Logger = require('../services/logger.js')
+
+const classes = {
+    FIGHTER: "Fighter",
+    WIZARD: "Wizard"
+};    
+
+class Player {    
 
     constructor(status, ability, kind, name) {
         this._status = status;
         this._ability = ability;
         this._class = kind;
         this._name = name;
-        gameLog.appendText('Player ' + this._name + ' (' + this._class + ') created');
-    }
+        Logger.appendText('Player ' + this._name + ' (' + this._class + ') created');
+    }    
 
     get status() {
         return this._status;
@@ -24,3 +31,6 @@ class Player {
         return this._class;
     }        
 }
+
+module.exports = Player;
+module.exports.classes = classes;

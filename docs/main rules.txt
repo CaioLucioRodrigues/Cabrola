@@ -65,8 +65,8 @@
 12 - Tier { Rarity [Legendary/ Epic/ Rare/ Uncommon / Common ], Color [Orange / Purple / Blue / Green / White ], DropProbably}
 
 13 - Damage
-13.1 - QtdDice
-13.2 - Dice 
+13.1 - Dice
+13.2 - Dice Amount
 13.3 - Modifier
 
 14 TypeWeapon

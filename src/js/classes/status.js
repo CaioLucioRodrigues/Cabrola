@@ -28,12 +28,12 @@ class Status {
         ((this._healthPoints + healthPoints) >= this._maxHealthPoints) ? 
             this._healthPoints = this._maxHealthPoints : 
             this._healthPoints += healthPoints;
-        gameLog.appendText('Health points restored to ' + this._healthPoints + ' points');
+            Logger.appendText('Health points restored to ' + this._healthPoints + ' points');
     }
 
     newRound() {
         this._actionPointsCurrentRound = this._actionPointsPerRound;
-        gameLog.appendText('Action points restored to ' + this._actionPointsCurrentRound + ' points');
+        Logger.appendText('Action points restored to ' + this._actionPointsCurrentRound + ' points');
     }
 
     newLevel(maxHealthPoints, actionPointsPerRound) {
@@ -41,15 +41,17 @@ class Status {
 
         if (maxHealthPoints > this._maxHealthPoints) {
             this._maxHealthPoints = maxHealthPoints;
-            gameLog.appendText('Updated maximum health points to ' + this._healthPoints);
+            Logger.appendText('Updated maximum health points to ' + this._healthPoints);
         }
         
         if (actionPointsPerRound > this._actionPointsPerRound) {
             this._actionPointsPerRound = actionPointsPerRound;
-            gameLog.appendText('Updated action points to ' + this._actionPointsPerRound);
+            Logger.appendText('Updated action points to ' + this._actionPointsPerRound);
         }
 
         this._healthPoints = this._maxHealthPoints;     
-        gameLog.appendText('Health points restored');
+        Logger.appendText('Health points restored');
     }
 }
+
+module.exports = Status;

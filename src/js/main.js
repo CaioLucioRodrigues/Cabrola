@@ -1,6 +1,5 @@
+var Player = required('./classes/player.js')
 
+$(document).ready(function(){    
 
-$(document).ready(function(){
-
-    Tests.testGeneral();
 });

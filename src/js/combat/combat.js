@@ -1,12 +1,25 @@
+let Initiative = require('./initiative.js')
+let Logger = require('../services/logger.js')
+
 class Combat{
     
-    constructor(players){
+    constructor(players) {
         this._rounds = 0;
         this._initiative = new Initiative(players);
     }
 
-    newRound(){
+    get currentRound() {
+        return this._rounds;
+    }
+
+    get isSequenceRevealed() {
+        return this.currentRound > 1;
+    }    
+
+    newRound() {
         this._rounds += 1;
-        gameLog.appendText('Round: ' + this._rounds)
+        Logger.appendText('Round: ' + this._rounds)
     }
 }
+
+module.exports = Combat;

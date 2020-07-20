@@ -50,4 +50,3 @@ class Tests {
         console.log(sword1)
     }
 }
-

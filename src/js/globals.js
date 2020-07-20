@@ -1,32 +1,29 @@
-const classes = {
-    FIGHTER: "Fighter",
-    WIZARD: "Wizard"
-};    
+
 
 const dices = {
     D4: {
-        NAME: "D4",  
-        MAX: 4
+        Name: "D4",  
+        Max: 4
     },
     D6: {
-        NAME: "D6",  
-        MAX: 6
+        Name: "D6",  
+        Max: 6
     },
     D8: {
-        NAME: "D8",  
-        MAX: 8
+        Name: "D8",  
+        Max: 8
     },
     D10: {
-        NAME: "D10",  
-        MAX: 10
+        Name: "D10",  
+        Max: 10
     },
     D12: {
-        NAME: "D12",  
-        MAX: 12
+        Name: "D12",  
+        Max: 12
     },
     D20: {
-        NAME: "D20",  
-        MAX: 20
+        Name: "D20",  
+        Max: 20
     },
 };    
 

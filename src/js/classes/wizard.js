@@ -1,3 +1,5 @@
+let Player = required('./player.js')
+
 class WizardStatus {
 
     static getMaxHealthPoints() {
