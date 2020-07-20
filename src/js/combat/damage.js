@@ -5,4 +5,17 @@ class Damage{
         this._dice = dice;
         this._modifier = modifier;
     }
+
+    get quantitiesDices (){
+        return this._quantitiesDices;
+    }
+
+    get dice (){
+        return this._dice;
+    }    
+
+    get modifier (){
+        return this._modifier;
+    }    
+
 }

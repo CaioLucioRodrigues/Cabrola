@@ -4,7 +4,7 @@ class Tests {
         Tests.testNewPlayers();
         Tests.testNewCombat();
         Tests.testLevelUp();
-        Tests.testWeapons();
+        Tests.testWeapons();        
     }
 
     static testNewPlayers() {        
@@ -41,13 +41,23 @@ class Tests {
     }
 
     static testWeapons(){
-        Tests.testSwords();
+        Tests.testSwords();              
     }
 
     static testSwords (){
-        console.log('---testeSwords---')
-        let sword1 = new LightSword('Kobold Sword', +2, Tier.Uncommon, [])
-        console.log(sword1)
+        console.log('---testLightSword---')
+        var swordKobold = new LightSword('Kobold Sword', +2, Tier.Uncommon, [])
+        console.log(swordKobold)
+        gameLog.clear();
+        Dicer.damageRoll(swordKobold.damage)
+        console.log(gameLog.log);
+
+        console.log('---testHeavySword---')
+        var swordGiant = new HeavySword('Gigant Sword', +5, Tier.Rare, [])
+        gameLog.clear();
+        console.log(swordGiant)  
+        Dicer.damageRoll(swordGiant.damage)             
+        console.log(gameLog.log);
     }
 }
 

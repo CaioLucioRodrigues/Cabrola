@@ -17,6 +17,10 @@ class Logger {
     appendText(message) {
         this._log += '\n' + message;        
     }
+
+    clear() {
+        this._log = '';        
+    }    
 }
 
 const gameLog = new Logger();
