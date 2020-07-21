@@ -1,10 +1,7 @@
 class Ability {
 
-    constructor(strength, dexterity, constitution, intelligence) {
-        this._strength = strength;
-        this._dexterity = dexterity;
-        this._constitution = constitution;
-        this._intelligence = intelligence;
+    constructor(_strength, _dexterity, _constitution, _intelligence) {
+        Object.assign(this, {_strength, _dexterity, _constitution, _intelligence});        
     }
 
     get strength() {

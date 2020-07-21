@@ -7,11 +7,8 @@ const classes = {
 
 class Player {    
 
-    constructor(status, ability, kind, name) {
-        this._status = status;
-        this._ability = ability;
-        this._class = kind;
-        this._name = name;
+    constructor(_status, _ability, _class, _name) {
+        Object.assign(this,  {_status, _ability, _class, _name});
         Logger.appendText('Player ' + this._name + ' (' + this._class + ') created');
     }    
 

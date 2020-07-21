@@ -19,7 +19,6 @@ class FighterStatus {
 class Fighter extends Player {
     
     constructor(name, level) {
-
         if (level > FighterStatus.getMaxLevel()) 
             level = FighterStatus.getMaxLevel();
 

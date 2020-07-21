@@ -5,7 +5,7 @@
     }
 
     static damageRoll(damage) {        
-        let result= 0;    
+        let result = 0;    
         for (let i = 0; i < damage.quantitiesDices; i++) {
             const roll = Dicer.roll(damage.dice);
             result = result + roll;

@@ -1,12 +1,7 @@
 class Weapons {
    
-    constructor (name, damage, actionPoints, tier, type, modifiers ){
-        this._damage = damage;
-        this._actionPoints = actionPoints;
-        this._tier = tier;
-        this._type = type;
-        this._name = name;
-        this._modifiers = modifiers;
+    constructor (_name, _damage, _actionPoints, _tier, _type, _modifiers) {
+        Object.assign(this, {_name, _damage, _actionPoints, _tier, _type, _modifiers});
     }
 
     get damage(){

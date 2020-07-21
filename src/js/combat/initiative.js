@@ -1,7 +1,7 @@
 class Initiative {
     
-    constructor (players) {
-        this._players = players;        
+    constructor (_players) {
+        Object.assign(this, {_players})        
         this.sortInitiative();
     }
 
