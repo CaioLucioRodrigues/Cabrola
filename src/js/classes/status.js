@@ -1,15 +1,9 @@
 class Status {
 
-    constructor(maxHealthPoints, armor, initiative, actionPointsPerRound, gold, level, experience) {
-        this._maxHealthPoints = maxHealthPoints;
-        this._healthPoints = maxHealthPoints;
-        this._armor = armor;
-        this._initiative = initiative;        
-        this._actionPointsPerRound = actionPointsPerRound;        
-        this._level = level;
-        this._experience = experience;
-        this._actionPointsCurrentRound = 0;                
-        this._gold = gold;
+    constructor(_maxHealthPoints, _armor, _initiative, _actionPointsPerRound, _gold, _level, _experience) {
+        Object.assign(this, {_maxHealthPoints, _armor, _initiative, _actionPointsPerRound, _gold, _level, _experience});        
+        this._healthPoints = this._maxHealthPoints;
+        this._actionPointsCurrentRound = 0;
     }
 
     get level() {

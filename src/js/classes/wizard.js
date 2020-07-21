@@ -18,7 +18,6 @@ class WizardStatus {
 class Wizard extends Player {
 
     constructor(name, level) {
-
         if (level > WizardStatus.getMaxLevel()) 
             level = WizardStatus.getMaxLevel();
 

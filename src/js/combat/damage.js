@@ -1,9 +1,7 @@
 class Damage{
 
-    constructor(quantitiesDices, dice, modifier = 0){
-        this._quantitiesDices = quantitiesDices;
-        this._dice = dice;
-        this._modifier = modifier;
+    constructor(_quantitiesDices, _dice, _modifier){
+        Object.assign(this, {_quantitiesDices, _dice, _modifier});        
     }
 
     get quantitiesDices (){
