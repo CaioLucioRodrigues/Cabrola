@@ -1,10 +1,11 @@
 {
   "name": "rpg",
   "version": "1.0.0",
-  "description": "",
+  "description": "RPG Game",
   "main": "index.js",
   "directories": {
-    "doc": "docs"
+    "doc": "docs",
+    "test": "test"
   },
   "scripts": {
     "test": "jest"
@@ -14,10 +15,14 @@
     "url": "git+https://github.com/CaioLucioRodrigues/Cabrola.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Caio",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CaioLucioRodrigues/Cabrola/issues"
   },
-  "homepage": "https://github.com/CaioLucioRodrigues/Cabrola#readme"
+  "homepage": "https://github.com/CaioLucioRodrigues/Cabrola#readme",
+  "dependencies": {
+    "jest": "^26.1.0"
+  },
+  "devDependencies": {}
 }

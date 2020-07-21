@@ -1,4 +1,5 @@
 let Combat = require('../src/js/combat/combat.js')
+let dices =  require('../src/js/combat/combat.js')
 
 test('test if sequence is revealed', () => {
 

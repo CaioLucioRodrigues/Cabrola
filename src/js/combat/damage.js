@@ -15,5 +15,6 @@ class Damage{
     get modifier (){
         return this._modifier;
     }    
-
 }
+
+module.exports = Damage;
