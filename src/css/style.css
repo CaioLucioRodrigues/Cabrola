@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'ancient';
-    src: url('../fonts/ancient-webfont.woff2') format('woff2'),
-         url('../fonts/ancient-webfont.woff') format('woff');
+    src: url('../fonts/ancient.woff2') format('woff2'),
+         url('../fonts/ancient.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
