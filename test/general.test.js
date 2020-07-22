@@ -13,11 +13,13 @@ class GeneralTests {
         dicerTest.testD4Roll();
         dicerTest.testD6Roll();
         dicerTest.testD8Roll();
+        dicerTest.testDamageRoll();
 
         console.log('=== Start Player Tests ===');
         let playerTest = new PlayerTest();
         playerTest.testNewPlayer();
         playerTest.testLevelUp();
+        playerTest.testIfHealthPointsRestoredInNewLevel();
         
         console.log('=== End Tests ===');
     }

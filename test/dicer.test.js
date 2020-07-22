@@ -3,11 +3,9 @@ class DicerTest {
     testD4Roll() {
         let worked = true;
 
-        if (Dicer.roll(dices.D4) > 4) worked = false;
-        if (Dicer.roll(dices.D4) > 4) worked = false;
-        if (Dicer.roll(dices.D4) > 4) worked = false;
-        if (Dicer.roll(dices.D4) > 4) worked = false;
-        if (Dicer.roll(dices.D4) > 4) worked = false;
+        let rolls = new Array(50).fill(0).map(() => {
+            if (Dicer.roll(dices.D4) > 4) worked = false;            
+        });
 
         if (!worked) console.log('Error in test testD4Roll()');
     }
@@ -15,30 +13,31 @@ class DicerTest {
     testD6Roll() {
         let worked = true;
 
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
-        if (Dicer.roll(dices.D6) > 6) worked = false;
+        let rolls = new Array(50).fill(0).map(() => {
+            if (Dicer.roll(dices.D6) > 6) worked = false;            
+        });        
 
         if (!worked) console.log('Error in test testD6Roll()');
     }    
 
     testD8Roll() {
         let worked = true;
-        
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;
-        if (Dicer.roll(dices.D8) > 8) worked = false;   
+
+        let rolls = new Array(50).fill(0).map(() => {
+            if (Dicer.roll(dices.D8) > 8) worked = false;            
+        });                
 
         if (!worked) console.log('Error in test testD8Roll()');
-    }        
+    } 
+    
+    testDamageRoll() {
+        let worked = true;
+        let damage = new Damage(2, dices.D4, 3);
+
+        let rolls = new Array(50).fill(0).map(() => {
+            if (Dicer.damageRoll(damage) > 11) worked = false;           
+        });  
+
+        if (!worked) console.log('Error in test testDamageRoll()');
+    }
 }

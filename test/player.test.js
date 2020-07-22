@@ -24,5 +24,18 @@ class PlayerTest {
         if (!(player1.status.level ==  4)) worked = false;        
 
         if (!worked) console.log('Error in test testLevelUp()');
-    }    
+    }  
+    
+    testIfHealthPointsRestoredInNewLevel() {
+        let worked = true;
+        let player1 = new Fighter('Caio', 1);   
+        let heathPoints = player1.status.healthPoints;        
+        
+        player1.status.takeDamage(1);
+        if (!(player1.status.healthPoints ==  heathPoints - 1)) worked = false;        
+        player1.status.takeDamage(Number.MAX_SAFE_INTEGER);
+        if (!(player1.status.healthPoints ==  0)) worked = false;
+
+        if (!worked) console.log('Error in test testIfHealthPointsRestoredInNewLevel()');
+    }
 }

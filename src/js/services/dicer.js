@@ -1,24 +1,16 @@
 class Dicer {
 
-    static roll(dices) {                
-        return 1 + Math.floor((dices.Max) * Math.random());
+    static roll(dices) {
+        let roll = 1 + Math.floor((dices.Max) * Math.random());
+        Logger.appendText(`Roll: ${roll}`);
+        return roll;
     }
 
-    static damageRoll(damage) {        
-        let result = 0;    
-        for (let i = 0; i < damage.quantitiesDices; i++) {
-            const roll = Dicer.roll(damage.dice);
-            result = result + roll;
-            //gameLog.appendText('Dice:'+ i +' - Damage roll: ' + roll);
-        }
-        result += damage.modifier;
-        //gameLog.appendText('Damage Total: ' + result + ' modifier: ' + (damage.modifier == 0 ? '' : (damage.modifier > 0 ? '+' : '-') + damage.modifier));
-        return result;
-    }
-
-    static teste()  {
-        var a = new Array(2).map((element) =>  element = 10);
-        return a;
+    static damageRoll(damage)  {        
+        let results = new Array(damage.quantitiesDices).fill(0).map((element, index) => Dicer.roll(damage.dice));            
+        let sum = results.reduce((acc, value) => acc + value);
+        Logger.appendText(`Total: ${sum} + ${damage.modifier} = ${sum + damage.modifier}`);
+        return sum + damage.modifier;
     }
 }
 

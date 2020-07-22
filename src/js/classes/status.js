@@ -16,13 +16,17 @@ class Status {
 
     get initiative() {
         return this._initiative;
-    }
+    }   
 
     set heathPoints(healthPoints) {
         ((this._healthPoints + healthPoints) >= this._maxHealthPoints) ? 
             this._healthPoints = this._maxHealthPoints : 
             this._healthPoints += healthPoints;
             Logger.appendText('Health points restored to ' + this._healthPoints + ' points');
+    }
+
+    takeDamage(damagePoints) {
+        this._healthPoints = Math.max(0, this._healthPoints - damagePoints);
     }
 
     newRound() {
