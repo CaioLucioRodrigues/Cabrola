@@ -24,5 +24,5 @@ class Player {
 
     get class() {
         return this._class;
-    }        
+    }       
 }

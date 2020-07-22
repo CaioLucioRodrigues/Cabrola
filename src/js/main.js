@@ -1,3 +1,3 @@
 $(document).ready(function(){   
-    Tests.testGeneral();
+    GeneralTests.executeTests();
 });

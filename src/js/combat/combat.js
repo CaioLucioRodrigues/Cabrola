@@ -2,7 +2,7 @@ class Combat{
     
     constructor(players) {
         this._rounds = 0;
-        this._initiative = new Initiative(players);
+        this._initiativeList = new Initiative(players);
     }
 
     get currentRound() {
@@ -12,6 +12,10 @@ class Combat{
     get isSequenceRevealed() {
         return this.currentRound > 1;
     }    
+
+    get initiativeList() {
+        return this._initiativeList;
+    }
 
     newRound() {
         this._rounds += 1;
