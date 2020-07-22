@@ -1,5 +1,3 @@
-let Player = required('.git /player.js')
-
 class WizardStatus {
 
     static getMaxHealthPoints() {

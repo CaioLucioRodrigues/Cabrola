@@ -10,10 +10,6 @@ class Logger {
         Logger.instance = this;
     }
 
-    get log() {
-        return this._log;
-    }
-
     appendText(message) {
         this._log += '\n' + message;        
     }
@@ -22,10 +18,11 @@ class Logger {
         this._log = '';        
     }        
 
+    static get log() {
+        return new Logger()._log;
+    }    
+
     static appendText(message) {
-        let log = new Logger();
-        log.appendText(message);
+        new Logger().appendText(message);
     }
 }
-
-module.exports = Logger;

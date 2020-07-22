@@ -1,8 +1,3 @@
-let Player = require('./player.js')
-let Ability = require('./ability.js')
-let Status = require('./status.js')
-let classes = require('./player.js')
-
 class FighterStatus {
 
     static getMaxHealthPoints() {
@@ -38,5 +33,3 @@ class Fighter extends Player {
         }
     }    
 }
-
-module.exports = Fighter;

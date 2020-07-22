@@ -1,6 +1,3 @@
-let Initiative = require('./initiative.js')
-let Logger = require('../services/logger.js')
-
 class Combat{
     
     constructor(players) {
@@ -21,5 +18,3 @@ class Combat{
         Logger.appendText('Round: ' + this._rounds)
     }
 }
-
-module.exports = Combat;

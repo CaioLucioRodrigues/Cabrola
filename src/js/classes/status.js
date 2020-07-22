@@ -47,5 +47,3 @@ class Status {
         Logger.appendText('Health points restored');
     }
 }
-
-module.exports = Status;

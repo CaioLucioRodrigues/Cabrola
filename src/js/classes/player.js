@@ -1,5 +1,3 @@
-let Logger = require('../services/logger.js')
-
 const classes = {
     FIGHTER: "Fighter",
     WIZARD: "Wizard"
@@ -28,6 +26,3 @@ class Player {
         return this._class;
     }        
 }
-
-module.exports = Player;
-module.exports.classes = classes;

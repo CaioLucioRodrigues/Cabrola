@@ -47,16 +47,14 @@ class Tests {
     static testSwords (){
         console.log('---testLightSword---')
         var swordKobold = new LightSword('Kobold Sword', +2, Tier.Uncommon, [])
-        console.log(swordKobold)
-        gameLog.clear();
+        console.log(swordKobold)        
         Dicer.damageRoll(swordKobold.damage)
-        console.log(gameLog.log);
+        //console.log(gameLog.log);
 
         console.log('---testHeavySword---')
-        var swordGiant = new HeavySword('Giant Sword', +5, Tier.Rare, [])
-        gameLog.clear();
+        var swordGiant = new HeavySword('Giant Sword', +5, Tier.Rare, [])        
         console.log(swordGiant)  
         Dicer.damageRoll(swordGiant.damage)             
-        console.log(gameLog.log);
+        //console.log(gameLog.log);
     }
 }

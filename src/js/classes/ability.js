@@ -40,5 +40,3 @@ class Ability {
         Logger.appendText('Intelligence increased to ' + this._intelligence)
     }    
 }
-
-module.exports = Ability;

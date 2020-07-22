@@ -1,5 +1,3 @@
-   
-
 class GlobalsElements {
 
     static getMessagesArea(){
