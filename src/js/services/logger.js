@@ -18,6 +18,10 @@ class Logger {
         this._log = '';        
     }        
 
+    static clear() {
+        return new Logger().clear();
+    }
+
     static get log() {
         return new Logger()._log;
     }    

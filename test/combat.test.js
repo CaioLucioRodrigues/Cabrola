@@ -4,9 +4,9 @@ class CombatTest {
         let worked = true;
         let combat = new Combat(null);
         
-        if (combat.isSequenceRevealed) worked =  false;
+        if (combat.isSequenceRevealed) worked = false;
         combat.newRound();
-        if (combat.isSequenceRevealed) worked =  false;         
+        if (combat.isSequenceRevealed) worked = false;         
         combat.newRound();
         if (!combat.isSequenceRevealed) worked =  false;
 

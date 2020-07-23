@@ -1,4 +1,4 @@
-class Damage{
+class DiceMove{
 
     constructor(_quantitiesDices, _dice, _modifier){
         Object.assign(this, {_quantitiesDices, _dice, _modifier});        

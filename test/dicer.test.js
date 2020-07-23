@@ -32,10 +32,10 @@ class DicerTest {
     
     testDamageRoll() {
         let worked = true;
-        let damage = new Damage(2, dices.D4, 3);
+        let diceMove = new DiceMove(2, dices.D4, 3);
 
         let rolls = new Array(50).fill(0).map(() => {
-            if (Dicer.damageRoll(damage) > 11) worked = false;           
+            if (Dicer.damageRoll(diceMove) > 11) worked = false;           
         });  
 
         if (!worked) console.log('Error in test testDamageRoll()');

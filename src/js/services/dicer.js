@@ -6,11 +6,11 @@ class Dicer {
         return roll;
     }
 
-    static damageRoll(damage)  {        
-        let results = new Array(damage.quantitiesDices).fill(0).map((element, index) => Dicer.roll(damage.dice));            
+    static damageRoll(diceMove)  {        
+        let results = new Array(diceMove.quantitiesDices).fill(0).map((element, index) => Dicer.roll(diceMove.dice));            
         let sum = results.reduce((acc, value) => acc + value);
-        Logger.appendText(`Total: ${sum} + ${damage.modifier} = ${sum + damage.modifier}`);
-        return sum + damage.modifier;
+        Logger.appendText(`Total: ${sum} + ${diceMove.modifier} = ${sum + diceMove.modifier}`);
+        return sum + diceMove.modifier;
     }
 }
 

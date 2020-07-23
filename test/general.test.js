@@ -20,6 +20,10 @@ class GeneralTests {
         playerTest.testNewPlayer();
         playerTest.testLevelUp();
         playerTest.testIfHealthPointsRestoredInNewLevel();
+
+        console.log('=== Start Action Tests ===');
+        let actionTest = new ActionTest();
+        actionTest.testDamageAction();
         
         console.log('=== End Tests ===');
     }

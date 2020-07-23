@@ -31,46 +31,48 @@
 4.1 - Action Points
 4.2 - Modifiers []
 
-5 - Weapon Description
-5.1 - Damage
+5 - Action Description
+5.1 - Name
 5.2 - Action Points
 5.3 - Modifiers []
-5.4 - Tier
-5.5 - TypeWeapon
-5.6 - Name
-5.7 - Range
 
-6 - Magic Description
-6.1 - Mana Points
-6.2 - Modifiers []
-6.3 - Tier
+6 - Weapon Description
+6.1 - Actions []
+6.2 - Tier
+6.3 - Type
+6.4 - Name
+6.5 - Range
 
-7 - Items Description
-7.1 - Price
-7.2 - Action Points
-7.3 - Modifiers []
-7.4 - Tier
+7 - Magic Description
+7.1 - Mana Points
+7.2 - Actions []
+7.3 - Tier
 
-8 - Equip []
+8 - Items Description
 8.1 - Price
-8.2 - Modifiers []
-8.3 - Tier 
+8.2 - Actions []
+8.3 - Tier
 
-9 - Modifiers { Damage, Increases Status [], Increases Ability []}
+9 - Equip []
+9.1 - Price
+9.2 - Modifiers []
+9.3 - Tier 
 
-10 - Increases Status { Permanent, Increases Points in Limit, Increases Points per Rounds }
+10 - Modifiers { Damage, Increases Status [], Increases Ability []}
 
-11 - Increases Ability { Permanent, Increases Points per Rounds }
+11 - Increases Status { Permanent, Increases Points in Limit, Increases Points per Rounds }
 
-12 - Tier { Rarity [Legendary/ Epic/ Rare/ Uncommon / Common ], Color [Orange / Purple / Blue / Green / White ], DropProbably}
+12 - Increases Ability { Permanent, Increases Points per Rounds }
 
-13 - Damage
-13.1 - Dice
-13.2 - Dice Amount
-13.3 - Modifier
+13 - Tier { Rarity [Legendary/ Epic/ Rare/ Uncommon / Common ], Color [Orange / Purple / Blue / Green / White ], DropProbably}
 
-14 TypeWeapon
-14.1 [Sword / Bow / Knife / Staff]
+14 - Dice Move
+14.1 - Dice
+14.2 - Dice Amount
+14.3 - Modifier
+
+15 Type
+15.1 [Sword / Bow / Knife / Staff]
 
 =========Combat=========
 
@@ -84,10 +86,6 @@
 1.1 - Initiative Sequence
 1.2 - Current Player
 1.3 - Log
-
-3 - Action
-3.1 - Count
-3.2 - Modifier
 
 =========Enemy=========
 1.1 - Max Health Points
