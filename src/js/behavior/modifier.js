@@ -8,8 +8,7 @@ const increaseStatus = {
     HEALTH_POINTS: "Heath Points", 
     ARMOR: "Armor", 
     INITIATIVE: "Initiative", 
-    ACTION_POINTS_PER_ROUND: "Actions Points Per Round",     
-    EXPERIENCE: "Experience"
+    ACTION_POINTS_PER_ROUND: "Actions Points Per Round"    
 }
 
 const increaseAbility = { 
@@ -48,18 +47,30 @@ class DamageModifier extends Modifier {
     }
 }
 
-class increaseStatusModifier extends Modifier {
+class IncreaseStatusModifier extends Modifier {
 
-    constructor(_increaseStatus, _points, _duration, _rounds) {
+    constructor(_increaseStatus, _points, _duration, _rounds = 0) {
         super(modifiers.INCREASESTATUS);
         Object.assign(this, {_increaseStatus, _points, _duration, _rounds});
     }
+
+    get increaseStatus() {
+        return this._increaseStatus;
+    }
+
+    get points() {
+        return this._points;
+    }
 }
 
-class increaseAbilityModifier extends Modifier {
+class IncreaseAbilityModifier extends Modifier {
 
-    constructor(_increaseAbility, _points, _duration, _rounds) {
+    constructor(_increaseAbility, _points, _duration, _rounds = 0) {
         super(modifiers.INCREASEABILITY);
         Object.assign(this, {_increaseAbility, _points, _duration, _rounds});
+    }
+
+    get increaseAbility() {
+        return this._increaseAbility;
     }
 }

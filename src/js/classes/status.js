@@ -18,7 +18,11 @@ class Status {
         return this._initiative;
     }   
 
-    set heathPoints(healthPoints) {
+    get armor() {
+        return this._armor;
+    }
+
+    recoverHeathPoints(healthPoints) {
         ((this._healthPoints + healthPoints) >= this._maxHealthPoints) ? 
             this._healthPoints = this._maxHealthPoints : 
             this._healthPoints += healthPoints;
@@ -27,6 +31,10 @@ class Status {
 
     takeDamage(damagePoints) {
         this._healthPoints = Math.max(0, this._healthPoints - damagePoints);
+    }
+
+    increaseArmor(armorPoints) {
+        this._armor += armorPoints;
     }
 
     newRound() {

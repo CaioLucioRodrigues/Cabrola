@@ -24,6 +24,8 @@ class GeneralTests {
         console.log('=== Start Action Tests ===');
         let actionTest = new ActionTest();
         actionTest.testDamageAction();
+        actionTest.testRecoverHealthPointsAction();
+        actionTest.testIncreaseArmorPointsAction();
         
         console.log('=== End Tests ===');
     }
