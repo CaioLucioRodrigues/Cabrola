@@ -15,12 +15,11 @@ class WizardStatus {
 
 class Wizard extends Player {
 
-    constructor(name, level) {
+    constructor(name, level, ability) {
         if (level > WizardStatus.getMaxLevel()) 
             level = WizardStatus.getMaxLevel();
 
-        let status = new Status(WizardStatus.getMaxHealthPoints()[level - 1], 8, 11, WizardStatus.getActionsPerRound()[level - 1], 30 * level, level, 0);                
-        let ability = new Ability(8, 10, 10, 16);
+        let status = new Status(WizardStatus.getMaxHealthPoints()[level - 1], 8, 11, WizardStatus.getActionsPerRound()[level - 1], 30 * level, level, 0);                        
         super(status, ability, classes.WIZARD, name);
     }
 

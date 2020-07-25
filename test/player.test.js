@@ -15,7 +15,8 @@ class PlayerTest {
 
     testLevelUp() {  
         let worked = true;
-        let player1 = new Fighter('Caio', 1);        
+        const ability = new Ability(10, 10, 10, 10);
+        let player1 = new Fighter('Caio', 1, ability);        
         
         if (!(player1.status.level ==  1)) worked = false;        
         player1.newLevel();
@@ -28,7 +29,8 @@ class PlayerTest {
     
     testIfHealthPointsRestoredInNewLevel() {
         let worked = true;
-        let player1 = new Fighter('Caio', 1);   
+        const ability = new Ability(10, 10, 10, 10);
+        let player1 = new Fighter('Caio', 1, ability);   
         let heathPoints = player1.status.healthPoints;        
         
         player1.status.takeDamage(1);
@@ -37,5 +39,21 @@ class PlayerTest {
         if (!(player1.status.healthPoints ==  0)) worked = false;
 
         if (!worked) console.log('Error in test testIfHealthPointsRestoredInNewLevel()');
+    }
+
+    testNewPlayer() {
+        let worked = true;
+        const newPlayer = NewPlayer.new();        
+
+        if (newPlayer.status == null) worked = false;
+        if (newPlayer.ability == null) worked = false;        
+        if (newPlayer.class == classes.FIGHTER) {
+            if (newPlayer.ability.intelligence > newPlayer.ability.strength) worked = false;
+        }
+        if (newPlayer.class == classes.WIZARD ){
+            if (newPlayer.ability.strength > newPlayer.ability.intelligence) worked = false;
+        }       
+        
+        if (!worked) console.log('Error in test testNewPlayer()');        
     }
 }

@@ -1,7 +1,7 @@
 class Dicer {
 
-    static roll(dices) {
-        let roll = 1 + Math.floor((dices.Max) * Math.random());
+    static roll(dice) {
+        let roll = 1 + Math.floor((dice.Max) * Math.random());
         Logger.appendText(`Roll: ${roll}`);
         return roll;
     }
