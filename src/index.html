@@ -2,6 +2,7 @@
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>                                
         <script type="text/javascript" src="js/globals.js"></script>
+        <script type="text/javascript" src="js/texts.js"></script>
         <script type="text/javascript" src="js/services/messenger.js"></script>
         <script type="text/javascript" src="js/services/dicer.js"></script>
         <script type="text/javascript" src="js/services/logger.js"></script>
@@ -21,7 +22,11 @@
         <script type="text/javascript" src="js/behavior/action.js"></script>        
         <script type="text/javascript" src="js/behavior/actions.js"></script>                
         <script type="text/javascript" src="js/behavior/modifier.js"></script>        
-        <script type="text/javascript" src="js/behavior/executer.js"></script>        
+        <script type="text/javascript" src="js/behavior/executer.js"></script>    
+        <script type="text/javascript" src="js/ui/controllers/statusController.js"></script>    
+        <script type="text/javascript" src="js/ui/views/view.js"></script>    
+        <script type="text/javascript" src="js/ui/views/playerView.js"></script>
+        <script type="text/javascript" src="js/ui/views/abilitysView.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="../test/general.test.js"></script> 
         <script type="text/javascript" src="../test/combat.test.js"></script> 
@@ -46,7 +51,13 @@
             <div id="map" class="area"></div>
             <div id="interaction" class="area"></div>
             <div id="inventory" class="area"></div>
-            <div id="status" class="area"></div>            
+            <div id="status" class="area">
+                <div id="player" class="area2"></div>
+                <div id="abilitys" class="area2"></div>
+                <div id="image" class="area2"></div>
+                <div id="status1" class="area2"></div>
+                <div id="status2" class="area2"></div>
+            </div>            
             <div id="messages" class="area"></div>
 
         </div>

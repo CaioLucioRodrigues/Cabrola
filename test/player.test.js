@@ -41,7 +41,7 @@ class PlayerTest {
         if (!worked) console.log('Error in test testIfHealthPointsRestoredInNewLevel()');
     }
 
-    testNewPlayer() {
+    testNewRandomPlayer() {
         let worked = true;
         const newPlayer = NewPlayer.new();        
 
