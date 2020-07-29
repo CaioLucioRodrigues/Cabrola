@@ -2,10 +2,10 @@ class AbilitysView extends View {
 
     template(model) {
         return `
-            str: ${model.ability.strength} </br>
-            dex: ${model.ability.dexterity} </br>
-            int: ${model.ability.intelligence} </br>
-            con: ${model.ability.constitution} </br>
+            Str : ${model.ability.strength} </br>
+            Dex: ${model.ability.dexterity} </br>
+            Int : ${model.ability.intelligence} </br>
+            Con : ${model.ability.constitution} </br>
         `;
     }
 }  

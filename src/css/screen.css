@@ -58,11 +58,22 @@
 }
 
 #abilitys {
+    letter-spacing: 2px;
     text-align: left;
     grid-column: 1;
     grid-row: 2 / 3;
 }
 
+#mainStatus {
+    text-align: left;
+    grid-column: 1;
+    grid-row: 3 / 4;
+}
 
+#secondStatus {
+    text-align: left;
+    grid-column: 2;
+    grid-row: 3 / 4;
+}
 
 /* end column's Status */

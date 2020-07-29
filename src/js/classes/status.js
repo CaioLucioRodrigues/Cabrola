@@ -26,6 +26,14 @@ class Status {
         return this._armor;
     }
 
+    get gold() {
+        return this._gold;
+    }
+    
+    get experience() {
+        return this._experience;
+    }
+
     recoverHeathPoints(healthPoints) {
         ((this._healthPoints + healthPoints) >= this._maxHealthPoints) ? 
             this._healthPoints = this._maxHealthPoints : 

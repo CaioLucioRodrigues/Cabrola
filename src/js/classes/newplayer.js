@@ -1,11 +1,11 @@
 class NewPlayer {
 
     static new(level=  1) {
-        const ability = NewPlayer.rollAbilitys();
+        const abilitys = NewPlayer.rollAbilitys();
 
-        switch (NewPlayer.chooseClass(ability)) {
-            case classes.FIGHTER: return new Fighter(NewPlayer.chooseName(), level, ability);
-            case classes.WIZARD: return new Wizard(NewPlayer.chooseName(), level, ability);
+        switch (NewPlayer.chooseClass(abilitys)) {
+            case classes.FIGHTER: return new Fighter(NewPlayer.chooseName(), level, abilitys);
+            case classes.WIZARD: return new Wizard(NewPlayer.chooseName(), level, abilitys);
         }
         
         console.log(abilitys);
