@@ -44,8 +44,8 @@ class IncreaseStatusActionFactory {
             switch(element._increaseStatus) {
                 case increaseStatus.HEALTH_POINTS: Actions.recoverHealthAction(executer, element);
                 case increaseStatus.ARMOR: Actions.increaseArmorAction(executer, element);
-                //case increaseStatus.ACTION_POINTS_PER_ROUND: Actions.apply...(executer, element)
-                //case increaseStatus.INITIATIVE: Actions...(executer, element)
+                case increaseStatus.ACTION_POINTS_PER_ROUND: Actions.increaseActionPointsPerRoundAction(executer, element);
+                case increaseStatus.INITIATIVE: Actions.increaseInitiativeAction(executer, element);
             }
         });
     }

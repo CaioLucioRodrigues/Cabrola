@@ -27,6 +27,8 @@ class GeneralTests {
         actionTest.testDamageAction();
         actionTest.testRecoverHealthPointsAction();
         actionTest.testIncreaseArmorPointsAction();
+        actionTest.testIncreaseActionPointsPerRoundAction();
+        actionTest.testIncreaseInitiativeAction();
         
         console.log('=== End Tests ===');
         Logger.clear();

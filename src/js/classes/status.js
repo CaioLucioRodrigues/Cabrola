@@ -18,6 +18,10 @@ class Status {
         return this._initiative;
     }   
 
+    get actionPointsPerRound() {
+        return this._actionPointsPerRound;
+    }       
+
     get armor() {
         return this._armor;
     }
@@ -35,6 +39,15 @@ class Status {
 
     increaseArmor(armorPoints) {
         this._armor += armorPoints;
+    }
+
+    increaseActionPointsPerRound(actionPointsPerRound) {
+        this._actionPointsPerRound += actionPointsPerRound;
+        this._actionPointsCurrentRound = actionPointsPerRound;
+    }
+    
+    increaseInitiative(initiative) {
+        this._initiative += initiative;
     }
 
     newRound() {

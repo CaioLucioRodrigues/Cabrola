@@ -15,4 +15,14 @@ class Actions {
         executer.target.status.increaseArmor(currentModifier.points);
         Logger.appendText(`${executer.target.name} increase armor in ${currentModifier.points} points from ${executer.action.name}`)
     }
+
+    static increaseActionPointsPerRoundAction(executer, currentModifier) {        
+        executer.target.status.increaseActionPointsPerRound(currentModifier.points);
+        Logger.appendText(`${executer.target.name} increase action points per round (and current) in ${currentModifier.points} points from ${executer.action.name}`)
+    }    
+
+    static increaseInitiativeAction(executer, currentModifier) {        
+        executer.target.status.increaseInitiative(currentModifier.points);
+        Logger.appendText(`${executer.target.name} increase initiative in ${currentModifier.points} points from ${executer.action.name}`)
+    }        
 }

@@ -57,4 +57,38 @@ class ActionTest {
 
         if (!worked) console.log('Error in test testIncreaseArmorPointsAction()');
     }    
+
+    testIncreaseActionPointsPerRoundAction() {
+        let worked = true;
+        let player1 = new Fighter('Caio', 1);
+        let player2 = new Fighter('Marcola', 1);
+        let actionPointsModifier = new IncreaseStatusModifier(increaseStatus.ACTION_POINTS_PER_ROUND, 2, duration.ROUNDS, 3);
+        let action = new Action('super velocity', 1, [actionPointsModifier]);        
+        let round = new Round([player1, player2]);
+        let executer = new Executer(action, round, player2);        
+        let beginningActionPointsPerRound = player2.status.actionPointsPerRound;       
+
+        executer.execute();
+        if (player2.status.actionPointsPerRound <= beginningActionPointsPerRound) worked = false;
+
+
+        if (!worked) console.log('Error in test testIncreaseActionPointsPerRoundAction()');
+    }   
+    
+    testIncreaseInitiativeAction() {
+        let worked = true;
+        let player1 = new Fighter('Caio', 1);
+        let player2 = new Fighter('Marcola', 1);
+        let initiativeModifier = new IncreaseStatusModifier(increaseStatus.INITIATIVE, 2, duration.UNTIL_END_FIGHT);
+        let action = new Action('divine initiative', 1, [initiativeModifier]);        
+        let round = new Round([player1, player2]);
+        let executer = new Executer(action, round, player2);        
+        let beginningInitiative = player2.status.initiative;       
+
+        executer.execute();
+        if (player2.status.initiative <= beginningInitiative) worked = false;
+
+
+        if (!worked) console.log('Error in test testIncreaseInitiativeAction()');
+    }        
 }
