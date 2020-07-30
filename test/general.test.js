@@ -29,8 +29,12 @@ class GeneralTests {
         actionTest.testIncreaseArmorPointsAction();
         actionTest.testIncreaseActionPointsPerRoundAction();
         actionTest.testIncreaseInitiativeAction();
+        actionTest.testIncreaseStrengthAction();
+        actionTest.testIncreaseDexterityAction();
+        actionTest.testIncreaseIntelligenceAction();
+        actionTest.testIncreaseConstitutionAction();
         
         console.log('=== End Tests ===');
-        Logger.clear();
+        //Logger.clear();
     }
 }

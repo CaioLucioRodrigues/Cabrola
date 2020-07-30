@@ -23,7 +23,7 @@ class Executer {
 
 class ActionFactory {
 
-    static getAction(executer) {
+    static getAction(executer) {        
 
         executer.action.modifiers.map((element) => {
             switch(element.type) {
@@ -55,12 +55,12 @@ class IncreaseAbilityActionFactory {
 
     static getAction(executer) {
 
-        executer.action.modifiers.map((element) => {
-            switch(element._increaseStatus) {
-                //case increaseAbility.STRENGTH: Actions...(executer, element)
-                //case increaseAbility.DEXTERITY: Actions...(executer, element)
-                //case increaseAbility.INTELLIGENCE: Actions...(executer, element)
-                //case increaseAbility.CONSTITUTION: Actions...(executer, element)
+        executer.action.modifiers.map((element) => {            
+            switch(element._increaseAbility) {
+                case increaseAbility.STRENGTH: Actions.increaseStrengthAction(executer, element);
+                case increaseAbility.DEXTERITY: Actions.increaseDexterityAction(executer, element);
+                case increaseAbility.INTELLIGENCE: Actions.increaseIntelligenceAction(executer, element);
+                case increaseAbility.CONSTITUTION: Actions.increaseConstitutionAction(executer, element);
             }
         });
     }
