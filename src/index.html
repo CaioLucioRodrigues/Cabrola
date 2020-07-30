@@ -1,35 +1,36 @@
 <html lang="en">
     <head>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>                                
-        <script type="text/javascript" src="js/globals.js"></script>
-        <script type="text/javascript" src="js/texts.js"></script>
+        <script type="text/javascript" src="js/util/globals.js"></script>
+        <script type="text/javascript" src="js/util/texts.js"></script>
         <script type="text/javascript" src="js/services/messenger.js"></script>
         <script type="text/javascript" src="js/services/dicer.js"></script>
         <script type="text/javascript" src="js/services/logger.js"></script>
-        <script type="text/javascript" src="js/classes/ability.js"></script>
-        <script type="text/javascript" src="js/classes/status.js"></script>
-        <script type="text/javascript" src="js/classes/player.js"></script>
-        <script type="text/javascript" src="js/classes/fighter.js"></script>             
-        <script type="text/javascript" src="js/classes/wizard.js"></script>        
-        <script type="text/javascript" src="js/classes/newplayer.js"></script>   
-        <script type="text/javascript" src="js/itens/tiers.js"></script>        
-        <script type="text/javascript" src="js/itens/weapons/weapons.js"></script>        
-        <script type="text/javascript" src="js/itens/weapons/swords.js"></script>   
-        <script type="text/javascript" src="js/combat/initiative.js"></script>        
-        <script type="text/javascript" src="js/combat/combat.js"></script>        
-        <script type="text/javascript" src="js/combat/dicemove.js"></script>        
-        <script type="text/javascript" src="js/combat/round.js"></script>        
-        <script type="text/javascript" src="js/behavior/action.js"></script>        
-        <script type="text/javascript" src="js/behavior/actions.js"></script>                
-        <script type="text/javascript" src="js/behavior/modifier.js"></script>        
-        <script type="text/javascript" src="js/behavior/executer.js"></script>    
-        <script type="text/javascript" src="js/ui/controllers/statusController.js"></script>    
+        <script type="text/javascript" src="js/domain/classes/ability.js"></script>
+        <script type="text/javascript" src="js/domain/classes/status.js"></script>
+        <script type="text/javascript" src="js/domain/classes/player.js"></script>
+        <script type="text/javascript" src="js/domain/classes/fighter.js"></script>             
+        <script type="text/javascript" src="js/domain/classes/wizard.js"></script>        
+        <script type="text/javascript" src="js/domain/classes/newplayer.js"></script>   
+        <script type="text/javascript" src="js/domain/itens/tiers.js"></script>        
+        <script type="text/javascript" src="js/domain/itens/weapons/weapons.js"></script>        
+        <script type="text/javascript" src="js/domain/itens/weapons/swords.js"></script>   
+        <script type="text/javascript" src="js/domain/combat/initiative.js"></script>        
+        <script type="text/javascript" src="js/domain/combat/combat.js"></script>        
+        <script type="text/javascript" src="js/domain/combat/dicemove.js"></script>        
+        <script type="text/javascript" src="js/domain/combat/round.js"></script>        
+        <script type="text/javascript" src="js/domain/behavior/action.js"></script>        
+        <script type="text/javascript" src="js/domain/behavior/actions.js"></script>                
+        <script type="text/javascript" src="js/domain/behavior/modifier.js"></script>        
+        <script type="text/javascript" src="js/domain/behavior/executer.js"></script>    
+        <script type="text/javascript" src="js/controllers/statusController.js"></script>    
+        <script type="text/javascript" src="js/controllers/menuController.js"></script>            
         <script type="text/javascript" src="js/ui/views/view.js"></script>    
         <script type="text/javascript" src="js/ui/views/playerView.js"></script>
         <script type="text/javascript" src="js/ui/views/abilitysView.js"></script>
         <script type="text/javascript" src="js/ui/views/mainStatusView.js"></script>
         <script type="text/javascript" src="js/ui/views/secondStatusView.js"></script>
-        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript" src="../test/general.test.js"></script> 
         <script type="text/javascript" src="../test/combat.test.js"></script> 
         <script type="text/javascript" src="../test/dicer.test.js"></script> 
@@ -44,23 +45,29 @@
         <meta name="author" content="Caio Lucio Rodrigues / Marco Morote"> 
         <meta name="keywords" content="Game, HTML, JavaScript, RPG">
         <meta name="description" content="RPG browser game, using HTML and JavaScript">
-    </head>
+    </head>    
     <body>
 
-        <div id="screen">
+        <div id="main">
+            
+            <div id="menu">
+                <button id="btnNewGame" type="button">New Game</button>
+            </div>
 
-            <div id="header" class="area">++++ Cabrolas Quest ++++</div>
-            <div id="map" class="area"></div>
-            <div id="interaction" class="area"></div>
-            <div id="inventory" class="area"></div>
-            <div id="status" class="area">
-                <div id="player" class="area"></div>
-                <div id="abilitys" class="area"></div>
-                <div id="image" class="area"></div>
-                <div id="mainStatus" class="area"></div>
-                <div id="secondStatus" class="area"></div>
-            </div>            
-            <div id="messages" class="area"></div>
+            <div id="screen">
+                <div id="header" class="area">++++ Cabrolas Quest ++++</div>
+                <div id="map" class="area"></div>
+                <div id="interaction" class="area"></div>
+                <div id="inventory" class="area"></div>
+                <div id="status" class="area">
+                    <div id="player" class="area"></div>
+                    <div id="abilitys" class="area"></div>
+                    <div id="image" class="area"></div>
+                    <div id="mainStatus" class="area"></div>
+                    <div id="secondStatus" class="area"></div>
+                </div>            
+                <div id="messages" class="area"></div>            
+            </div>
 
         </div>
 

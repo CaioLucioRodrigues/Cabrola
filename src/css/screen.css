@@ -1,7 +1,7 @@
 #screen {    
     display: grid;    
     width: 95%;
-    height: 95%;  
+    height: 90%;  
     grid-gap: 10px;
     grid-template-columns: 24% 24% 24% 14% 14%;
     grid-template-rows: 5% 20% 20% 20% 25% 10%;    
@@ -75,5 +75,4 @@
     grid-column: 2;
     grid-row: 3 / 4;
 }
-
 /* end column's Status */
