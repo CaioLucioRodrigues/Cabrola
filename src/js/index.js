@@ -1,4 +1,4 @@
-function newGame() {
+function newGame() {    
     GeneralTests.executeTests();   
 
     player = NewPlayer.new(1);

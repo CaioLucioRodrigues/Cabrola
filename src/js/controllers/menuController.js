@@ -5,6 +5,7 @@ class MenuController {
     }    
 
     update() {
+        this._btnNewGame.off("click");
         this._btnNewGame.click(() => newGame());
     }
 }

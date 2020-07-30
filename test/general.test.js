@@ -3,7 +3,7 @@ class GeneralTests {
     static executeTests() {
 
         console.log('=== Start Combat Tests ===');
-        let combatTest = new CombatTest();
+        const combatTest = new CombatTest();        
         combatTest.testIfSequenceIsRevealed();
         combatTest.testCurrentRoundNumber();
         combatTest.testInitiativeOrder();
@@ -35,6 +35,6 @@ class GeneralTests {
         actionTest.testIncreaseConstitutionAction();
         
         console.log('=== End Tests ===');
-        //Logger.clear();
+        Logger.clear();
     }
 }
